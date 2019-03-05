@@ -1,19 +1,32 @@
 // Global styling for this template
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 body {
   background:url("../images/27564442b419d83.jpg") no-repeat fixed center;
   background-size: cover;
   overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100%;//that's for only before of background image darkness full screen
   @include body-font;
-  .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    bottom:0;
-    background-color:rgba(0,0,0, .3);
+  font-family: 'Roboto', sans-serif;
+  padding-top:30px;
+  position: relative;
+  &::before{
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0 !important;
+  right:0;
+  position: absolute;
+  width: 100%;
+  background-color:rgba(0,0,0, .3);
   }
 }
-*{
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }

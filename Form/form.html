@@ -18,9 +18,8 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/form.css">
 </head>
-<body>
+<body id="body">
     <div class="container-fluid">
-        <div class="overlay"></div>
         <h1 class="m-2 text-center wow zoomIn" data-wow-delay=".8s">All Type of Input</h1>
         <div class="row">
             <div class="col-md-3 col-sm-12 wow fadeIn">
@@ -103,7 +102,7 @@
                         <div id="fullForm">
                             <div class="box box1">
                                 <input type="image" name="image"src="assets/images/27564442b419d83.jpg" class="input" required>
-                                <label class=" inputLabel" style="margin-top:-154px;font-size:14px">Image</label>
+                                <label class=" inputLabel" style="margin-top:-154px !important;font-size:14px">Image</label>
                             </div>
                             <div class="box box2">
                                 <input class="margin-top-input"  type="radio" name="radio" required>
@@ -153,6 +152,10 @@
                         <div class="box box3">
                             <input type="number" name="number" class="input" required>
                             <label class="inputLabel">Number</label>
+                        </div>
+                        <div class="box box4">
+                            <textarea id="message" class="input"></textarea>
+                            <label class="inputLabel">Your message</label>
                         </div>
                         <div class="box box7">
                             <input type="submit" value="sibmit"> &nbsp;

@@ -1,7 +1,4 @@
 body{
-
-  font-family: 'Roboto', sans-serif;
-  padding-top:30px;
   h1{
       color:#fff;
       z-index: 1;
@@ -58,7 +55,7 @@ body{
             position: relative;
             width:100%;
             .inputLabel{
-                margin-top: -28px;
+                margin-top: -35px;
                 position: absolute;
                 color: #bbb;
                 padding: 5px 2px;
@@ -116,10 +113,13 @@ body{
                 transition:.5s;
                 font-size:14px;
             }
+            #message:focus+.inputLabel{
+                margin-top:-58px !important;
+            }
         }
         .box1{
-            .input{
-                padding-top:20px;
+            .inputLabel{
+                margin-top:-35px !important;
             }
         }
         .box7{
@@ -128,9 +128,15 @@ body{
             }
         }
         .box4{
+            .inputLabel{
+                margin-top:-41px !important;
+            }
+            #message{
+                background-color:transparent !important;
+                padding-bottom:27px;
+            }
             .input {
                 height:55px;
-                padding-bottom: 0 !important;
             }
         }
         .box5{
