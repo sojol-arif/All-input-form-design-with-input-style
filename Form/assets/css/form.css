@@ -50,6 +50,8 @@ body h1 {
   position: relative; }
 body .col-box-3 .box2 {
   margin-top: -5px; }
+body .col-box-4 .box4 .inputLabel {
+  margin-top: -41px !important; }
 body .col-box-4 .box1 {
   position: relative; }
   body .col-box-4 .box1 button {
@@ -85,6 +87,9 @@ body #inputForm {
   body #inputForm .box {
     position: relative;
     width: 100%; }
+    body #inputForm .box .col3box1inputlabel {
+      margin-top: -154px;
+      font-size: 14px; }
     body #inputForm .box .inputLabel {
       margin-top: -35px;
       position: absolute;
@@ -92,6 +97,9 @@ body #inputForm {
       padding: 5px 2px;
       left: 0;
       z-index: 0; }
+    body #inputForm .box .box4InputLabel {
+      margin-top: -50px;
+      font-size: 14px; }
     body #inputForm .box input {
       background-color: transparent; }
     body #inputForm .box .input {
@@ -139,14 +147,12 @@ body #inputForm {
       -webkit-transition: .5s;
       transition: .5s;
       font-size: 14px; }
+    body #inputForm .box .input:focus + .col3box1inputlabel {
+      margin-top: -154px !important; }
     body #inputForm .box #message:focus + .inputLabel {
       margin-top: -58px !important; }
-  body #inputForm .box1 .inputLabel {
-    margin-top: -35px !important; }
   body #inputForm .box7 #button {
     margin-top: 28px !important; }
-  body #inputForm .box4 .inputLabel {
-    margin-top: -41px !important; }
   body #inputForm .box4 #message {
     background-color: transparent !important;
     padding-bottom: 27px; }
@@ -156,3 +162,18 @@ body #inputForm {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background: red; } }
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  margin-top: -132px !important; }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col3box1inputlabel {
+    margin-top: -154px !important; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */

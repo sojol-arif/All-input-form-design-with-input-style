@@ -6,195 +6,294 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test Project Landing Page Metarial Design</title>
 
-    <!-- Roboto Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+    <!-- Open sans Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="assets/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/browserIcon.jpg" />
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/landingPage.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="overlay"></div>
-        <h1 class="m-2 text-center">All Type of Input</h1>
-        <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <div id="fullFormOuter">
-                    <form action="" method="" id="inputForm">
-                        <div id="fullForm">
-                            <div class="box box1">
-                                <input type="text" name="text" class="input" required autofocus>
-                                <label class="inputLabel">Username</label>
-                            </div>
-                            <div class="box box2">
-                                <input type="password" name="password" class="input" required>
-                                <label class="inputLabel">Password</label>
-                            </div>
-                            <div class="box box3">
-                                <input type="email" name="email" class="input" required>
-                                <label class="inputLabel">E-mail</label>
-                            </div>
-                            <div class="box box4">
-                                <input  type="color" name="color" value="#ff0000" class="input" required>
-                                <label class="inputLabel margin-top-label">Choose Colour</label>
-                            </div>
-                            <div class="box box5">
-                                <input type="date" value="Birthday" name="date" class="input" required>
-                                <label class="inputLabel margin-top-label">Birthday</label>
-                            </div>
-                            <div class="box box6">
-                                <input type="file" name="file" class="input" required>
-                            </div>
-                            <div class="box box7">
-                                <input type="submit" value="sibmit">
-                            </div>
-                        </div>
-                    </form>
+    <header>
+        <div class="navbar-fixed"  id="lp-nav">
+            <nav>
+                <div class="nav-wrapper grey darken-2">
+                   <div class="container">
+                        <a href="#" class="brand-logo"><img src="assets/images/clearfit_logo.png"></a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faqs.html">FAQ</a></li>
+                        </ul>
+                        <ul class="sidenav" id="mobile-demo">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faqs.html">FAQ</a></li>
+                        </ul>
+                   </div>
                 </div>
-            </div>
-            <!-- 2nd Column -->
-            <div class="col-md-3 ol-sm-12 col-box-2">
-                <div id="fullFormOuter">
-                    <form action="" method="" id="inputForm">
-                        <div id="fullForm">
-                            <div class="box box1">
-                                <input type="text" name="text" class="input" required>
-                                <label class="inputLabel">Country</label>
-                            </div>
-                            <div class="box box2">
-                                <input type="tel" name="tel"  class="input">
-                                <label class="inputLabel">Mobile</label>
-                            </div>
-                            <div class="box box2">
-                                <input type="time" name="time"  class="input">
-                                <label class="margin-top-label inputLabel">Time</label>
-                            </div>
-                            <div class="box box4">
-                                <input class="margin-top-input"  type="checkbox" name="color" required>
-                                <label>Fron-End</label>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                <input "margin-top-input"  type="checkbox" name="color" required>
-                                <label>Back-End</label>
-                            </div>
-                            <div class="box box5">
-                                <input type="month" name="month" value="2014-05" class="input">
-                                <label class="margin-top-label inputLabel">Month</label>
-                            </div>
-                            <div class="box box6">
-                                <input type="range" name="age" min="25" max="35" class="margin-top-input">
-                                <label class=" inputLabel" style="margin-top:0px !important">Age</label>
-                            </div>
-                            <div class="box box7">
-                                <input type="reset" value="Reset">
-                            </div>
-                        </div>
-                    </form>
+            </nav>
+        </div>
+        <!-- show only small size -->
+        <div class="container call-us-small-size white-text">
+            <div class="row">
+                <div class="hide-on-med-and-up center">
+                    <p class="grey darken-3 center">Call us! &nbsp;<b> 01853067375 </b></p>
                 </div>
-            </div>
-            <!-- 3rd Column -->
-            <div class="col-md-3 ol-sm-12 col-box-3">
-                <div id="fullFormOuter">
-                    <form action="" method="" id="inputForm">
-                        <div id="fullForm">
-                            <div class="box box1">
-                                <input type="image" name="image"src="assets/images/27564442b419d83.jpg" class="input" required>
-                                <label class=" inputLabel" style="margin-top:-154px;font-size:14px">Image</label>
-                            </div>
-                            <div class="box box2">
-                                <input class="margin-top-input"  type="radio" name="radio" required>
-                                <label>Male</label>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                <input class="margin-top-input"  type="radio" name="radio" required>
-                                <label>Female</label>
-                            </div>
-                            <div class="box box3">
-                                <input type="hidden" name="hidden" class="input" required>
-                            </div>
-                            <div class="box box5">
-                                <input type="week" name="week" class="input" style="margin-top:-20px" required>
-                                
-                            </div>
-                            <div class="box box6">
-                                <input type="url" name="url" class="input">
-                                <label class=" inputLabel" >Url</label>
-                            </div>
-                            <div class="box box7">
-                                <input type="button" name="button" value="button" id="button" required>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        <!-- 4rth Column -->
-        <div class="col-md-3 ol-sm-12 col-box-4">
-            <div id="fullFormOuter">
-                <form action="" method="" id="inputForm">
-                    <div id="fullForm">
-                        <div class="box box1">
-                            <input type="search" name="search" class="input">
-                            <label class="inputLabel">Search..</label>
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </div>
-                        <div class="box box2">
-                            <input list="Place" name="Place" class="input">
-                            <datalist id="Place">
-                                <option value="Dhaka">
-                                <option value="Khulna">
-                                <option value="Barisal">
-                                <option value="Nilphamari">
-                            </datalist>
-                            <label class="inputLabel">District</label>
-                        </div>
-                        <div class="box box3">
-                            <input type="number" name="number" class="input" required>
-                            <label class="inputLabel">Number</label>
-                        </div>
-                        <div class="box box7">
-                            <input type="submit" value="sibmit"> &nbsp;
-                            <input type="reset" value="Reset">
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
+        <!-- banner -->
+        <div class="container">
+            <div class="banner">
+                <div class="banner-inner">
+                    <h2>The Easy Way to Find and Hire the Best Employees.</h2>
+                    <p>SmoothHiring makes it easy to find applicants and instantly identify which ones fit the job.
+                    </p>
+                    <a href="#" class="btn banner-btn waves-effect get-started z-depth-0">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- full content -->
+    <section class="container" id="content">
+        <div class="row">
+            <div class="col m12 l10 offset-l1 hide-on-small-only">
+                <img id="sponsorsimage" src="assets/images/sponsors1.png" alt="">
+            </div>
+            <div id="feature" class="clearfix">
+                <div class="single-feature center col m4 l4">
+                    <img src="assets/images/01.png">
+                    <h4>Save Time</h4>
+                </div>
+                <div class="single-feature center col m4 l4">
+                    <img src="assets/images/02.png">
+                    <h4>Hire Talent</h4>
+                </div>
+                <div class="single-feature center col m4 l4">
+                    <img src="assets/images/03.png">
+                    <h4>Repeat Results</h4>
+                </div>
+            </div>
+            <div id="mid-content" class="col m10 offset-m1 clearfix">
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <h5>Single Post, Multiple Job Boards</h5>
+                        <p>SmoothHiring’s network automatically broadcasts your job description to many top job boards. This increases the number of candidates applying for your job. One click is all it takes. Bonus is you pay less than doing it yourself.&nbsp;<a href="#" >more</a> 
+                        </p>
+                        <a href="#" class="secondary-content"><img src="assets/images/Vector-Job-Board2-1.png"></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <h5>Highlights Top Candidates</h5>
+                        <p>SmoothHiring’s patented job-fit technology instantly identifies which applicants match your needs. Just look for the big green checkmarks. It’s predicting success faster than sorting through resumes.&nbsp;<a href="#" >more</a> 
+                        </p>
+                        <a href="#" class="secondary-content"><img src="assets/images/points-computer.png"></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <h5>Grow Your Team</h5>
+                        <p>SmoothHiring’s patented technology captures your most productive employees’ winning attributes and sets them as a benchmark for new hires. It makes it easier to fill any role, on any team.&nbsp;<a href="#" >more</a> 
+                        </p>
+                        <a href="#" class="secondary-content"><img src="assets/images/clone-home.png"></a>
+                    </li>
+                </ul>
+                <a href="#" class="btn waves-effect mid-btn get-started center">GET STARTED</a>          
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans & Pricing -->
+    <section class="container" id="plansAndPricing">
+        <div class="row">
+            <div class="col s12 l10 offset-l1">
+                <h3>Plans & Pricing</h3>
+                <h5>No subscription fees. Only pay per job. Start hiring in 5 minutes.</h5>
+            </div>
+        </div>
+        <!---cards -->
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-content white-text">
+                        <h1 class="center">No Posting<br>
+                        Package</h1>
+                        <div class="card-white-portion center">
+                            <img src="assets/images/card1.png" alt="">
+                            <h2>Use our system to rank your applicants</h2>
+                            <h5>USD$299/job</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cards 2 -->
+            <div class="col s12 m4 l4">
+                <div class="card card-2">
+                    <div class="card-content white-text">
+                        <h1 class="center">No Posting<br>
+                        Package</h1>
+                        <div class="card-white-portion center">
+                            <img src="assets/images/03.png" alt="">
+                            <h2>Use our system to rank your applicants</h2>
+                            <h5>USD$299/job<br><span>MOST POPULAR</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards 3 -->
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-content white-text">
+                        <h1 class="center">No Posting<br>
+                        Package</h1>
+                        <div class="card-white-portion center">
+                            <img src="assets/images/card3.png" alt="" width="100" >
+                            <h2>Use our system to rank your applicants</h2>
+                            <h5>USD$299/job</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l12 center">
+                <a href="#" class="btn customer-btn waves-effect get-started">GET STARTED</a>
+                <p class="plans-bottom-p">or Call +8801853067375</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Success -->
+    <section class="container" id="customer-success">
+        <div class="row">
+            <div class=" col s12 l10 offset-l1">
+                <h3>Customer Success</h3>
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <img src="assets/images/testimonials-bw-chad.jpg" alt="" class="img-responsive">
+                        <div class="right-content-customer-success ">
+                            <h5 class="darken-2">	
+                                    We’ve hired over 20 employees through SmoothHiring and they are all still with us</h5>
+                            <p><b>– Chad Horenfeldt,</b> VP Customer Success at Influitive</p>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="assets/images/testimonials-bw-ianthe.jpg" alt="" class="img-responsive">
+                        <div class="right-content-customer-success ">
+                            <h5 class="darken-2">	
+                                    We’ve hired over 20 employees through SmoothHiring and they are all still with us</h5>
+                            <p><b>– Chad Horenfeldt,</b> VP Customer Success at Influitive</p>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="assets/images/testimonials-bw-heather.jpg" alt="" class="img-responsive">
+                        <div class="right-content-customer-success ">
+                            <h5 class="darken-2">	
+                                    We’ve hired over 20 employees through SmoothHiring and they are all still with us</h5>
+                            <p><b>– Chad Horenfeldt,</b> VP Customer Success at Influitive</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="top-footer grey darken-2">
+            <div class="container">
+                <div class="row">
+                    <div class="top-footer-inner">
+                        <div class="col s12 l2">
+                            <h6><i class="fas fa-map-marker-alt"></i>&nbsp;HEAD OFFICE</h6>
+                            <p style="color:#bfccd8">2206 Orange Lake Dr<br>
+                                Lewis center, OH 43035</p>
+                        </div>
+                        <div class="col s12 l3 footer-top-right">
+                            <h6><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;GENERAL INQUIRIES</h6>
+                            <p><a href="mailto:info@smoothhiring.com">info@smoothhiring.com</a></p>
+                            <h6><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;SALES</h6>
+                            <p><a href="mailto:sales@smoothhiring.com">sales@smoothhiring.com</a></p>
+                            <hr>
+                            <h6><i class="fas fa-comment" aria-hidden="true"></i>&nbsp;CALL TOLL-FREE</h6>
+                            <p><a href="tel:+8801853067375">+8801853067375</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2010 - 2019 SmoothHiring. All Rights Reserved. U.S. Patent No. 7,502,748 B1; No. 8,346,569; Other Patents Pending.
+          </div>
+        </div>
+      </footer>
+
+    <!-- fixed social icon -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating waves-effect waves-circle waves-light btn-large fixed-icon-add">
+            <i class="large material-icons">message</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating" style="background-color:#29487D"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="btn-floating" style="background-color:#007BB5"><i class="fab fa-linkedin"></i></a></li>
+            <li><a class="btn-floating" style="background-color:#46D89E"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="btn-floating" style="background-color:#9D3EAA"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+            
+      
+    
+
+    <!-- jquery -->
     <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function(){
-            //Input field label up
-            $(".input").blur(function(){
-                if($(this).val().length>0){
-                    $(this).siblings(".inputLabel").css({"margin-top" : "-52px", "font-size":"14px"});
-                }else{
-                    $(this).siblings(".inputLabel").css({"margin-top" : "-28px"});
-                }
-            })
+            $('.sidenav').sidenav();
+        });
 
-            //checkbox checed then label modified
-            $('input[type="checkbox"]').click(function(){
-                if($(this).prop("checked") == true){
-                    $(this).next("label").css({"color":"green", "font-size":"17px","font-weight":"bold"})
-                }
-                else if($(this).prop("checked") == false){
-                    $(this).next("label").css({"color":"inherit","font-size":"inherit","font-weight":"inherit"})
-                }
-            });
-
-             //Radio checed then label modified
-             $('input[type="radio"]').click(function(){
-                if($(this).prop("checked",true)){
-                    $(this).next("label").css({"color":"purple", "font-size":"17px","font-weight":"bold"}).siblings("label").css({"color":"inherit", "font-size":"inherit","font-weight":"inherit"});
-                }
+        // fixed button
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+            direction: 'top',
+            hoverEnabled: false
             });
         });
+
         
+        //navbar scroll down hide and scroll up show
+        var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if ( prevScrollpos > currentScrollPos) {
+                document.getElementById("lp-nav").style.top = "0";
+            }
+            else{
+                
+                document.getElementById("lp-nav").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+        
+        //navbar hide certain number scrolling                
+        $(window).scroll(function(event) {
+            if ($(window).scrollTop() < 200) {
+                $('#lp-nav').addClass('nav-scroll-down');
+            }
+            else {
+                $('#lp-nav').removeClass('nav-scroll-down');
+            }
+        });
     </script>
 </body>
 </html>

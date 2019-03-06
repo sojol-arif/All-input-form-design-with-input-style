@@ -1,19 +1,47 @@
 // Global styling for this template
-body {
-  background:url("../images/27564442b419d83.jpg") no-repeat fixed center;
-  background-size: cover;
-  overflow-x: hidden;
-  @include body-font;
-  .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    bottom:0;
-    background-color:rgba(0,0,0, .3);
-  }
+html{
+  height: 100%;
+  position: relative;
 }
-*{
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before
+{
   box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Ubuntu', sans-serif;
+}
+p{
+  font-size:16px;
+}
+.container{
+  width:86%;
+}
+.get-started.banner-btn{
+  margin-left:205px;
+}
+.get-started{
+  max-width: 182px;
+  font-weight: 600;
+  font-size: 20px;
+  height:45px;
+  padding: 3px 18px 5px;
+  background: #76CF20;
+  border-radius: 4px;
+  text-align: center;
+}
+.mid-btn.get-started{
+  margin-top:45px;
+  margin-bottom:45px;
+  display: flex;
+  margin: 0 auto;
+}
+.customer-btn{
+  margin-top:20px;
 }

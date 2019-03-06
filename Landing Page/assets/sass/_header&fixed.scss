@@ -1,0 +1,86 @@
+body{
+   header{
+       .nav-scroll-down{
+           top:0 !important;
+       }
+       ul li a:hover{
+        border-bottom:2px solid orange;
+        background:none;
+       }
+        .banner{
+            background: url(../images/banner.jpg) center no-repeat;
+            height: 468px;
+            position: relative;
+            &::before{
+                content:"";
+                left:0;
+                top:0;
+                width: 100%;
+                bottom:0;
+                position: absolute;
+                background: rgba(0,0,0, .4)
+            }
+            .banner-inner{
+                position: absolute;
+                padding-top:75px;
+            }
+            h2,
+            p{
+                padding-left:18px;
+                width: 539px;
+                color:$white;
+                letter-spacing: 1px;
+                margin-bottom:12px;
+            }
+            h2{
+                font-size:3.1em;
+                font-weight: 400;
+            }
+            p{
+               padding-top:20px; 
+                font-size:1.2em;
+            }
+            
+       }
+        nav{
+            .nav-wrapper{
+                padding-top:3px;
+            }
+        }
+        #lp-nav{
+            top: 0;
+            display: block;
+            transition-delay: .1s;
+            transition: top 0.3s;
+        }
+   }
+   
+}
+
+/*-- small size show only section --*/
+.call-us-small-size{
+    .row{
+        margin-bottom:0px;
+        p{
+            letter-spacing: 1px;
+            padding:12px 0;
+            margin:0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+/*--  fixed icon add --*/
+.fixed-icon-add{
+    background-color:#0071B2; box-shadow:0 0 4px rgba(0,0,0, .2),   0 0 5px 4px rgba(0,0,0, .1);
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        height: 72px;
+        line-height: 64px;
+    }
+    nav .brand-logo{
+        padding-top:7px;
+    }
+}
