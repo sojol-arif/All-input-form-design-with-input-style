@@ -15,7 +15,7 @@
         .collection{
             border:1px solid transparent;
             .collection-item.avatar {
-                height: 272px !important;
+                height: 272px ;
             }
             .collection-item {
                 border-bottom: none;
@@ -45,6 +45,7 @@
         }
     }
     .card{
+        height:350px;
         border:6px solid #0493dd;
         border-radius:20px;
         .card-content{
@@ -98,7 +99,6 @@
         }
          .collection-item.avatar {
             padding-left: 0 !important;
-            height:200px;
             display: flex;
             a{
                 flext-basis:188px;
@@ -106,7 +106,7 @@
             .right-content-customer-success{
                 flex-basis: 700px;
                 padding-top:11px;
-                padding-left:50px;
+                padding-left:10px;
                 p{
                     padding-top:15px;
                 }
@@ -118,3 +118,150 @@
     }
 
 }
+
+
+
+/* -- media queries -- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #feature{
+        padding-top:18px;
+    }
+    .container{
+        width: 100%;
+    }
+    .collection .collection-item.avatar .secondary-content {
+        position: relative; 
+    }
+    #content #mid-content .collection .collection-item.avatar {
+        height: 434px;
+    }
+    #content #mid-content p {
+        width:100%;
+    }
+
+    /* customer success */
+    .right-content-customer-success{
+        p{
+            padding-top:0;
+        }
+        h5{
+            margin-top:0px;
+        }
+    }
+    #customer-success ul.collection .collection-item.avatar .right-content-customer-success {
+        padding-top:0px;
+    }
+    #customer-success ul.collection .collection-item.avatar img{
+        height: 100px;
+    }
+    .sidenav-overlay {
+        z-index: 995 !important;
+    }
+    
+    #customer-success ul.collection .collection-item.avatar .right-content-customer-success {
+        padding-top: 0px !important;
+        h5{
+            margin-top: 0px;
+            font-size: 18px;
+        }
+    }
+    .footer-copyright{
+        p{
+            padding-right:10px;
+            padding-left:10px;
+        }
+    }
+    .img1-mid-content{
+        height:190px !important;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width:767px) {
+    .container{
+        // width:594px;
+        width: 100%;
+    }
+    .collection .collection-item.avatar .secondary-content {
+        position: relative; 
+    }
+    #content #mid-content .collection .collection-item.avatar {
+        height: 434px;
+    }
+    #content #mid-content p {
+        width:100%;
+    }
+    .secondary-content {
+         float: right; 
+    }
+    .sidenav-overlay {
+        z-index: 995 !important;
+    }
+    #customer-success ul.collection .collection-item.avatar .right-content-customer-success {
+        padding-top: 0px !important;
+        h5{
+            margin-top: 0px;
+            font-size: 18px;
+        }
+    }
+    .footer-copyright{
+        p{
+            padding-right:5px;
+            padding-left:5px;
+        }
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .container{
+        width:750px;
+    }
+    .collection .collection-item.avatar .secondary-content {
+        position: relative; 
+    }
+    #content #mid-content .collection .collection-item.avatar {
+        height: 434px;
+    }
+    #content #mid-content p {
+        width:100%;
+    }
+    .secondary-content {
+         float: right; 
+    }
+
+    .sidenav-overlay {
+        z-index: 995 !important;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .container{
+        width:970px;
+    }
+    #content #mid-content .collection .collection-item.avatar {
+        height: 282px;
+    }
+    #content #mid-content p {
+        width:445px;
+    }
+    .secondary-content {
+         float: right; 
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .container{
+        width:1170px;
+    }
+    
+    .collection .collection-item.avatar .secondary-content {
+        position: absolute; 
+    }
+  }

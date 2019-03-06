@@ -21,10 +21,10 @@ p{
   font-size:16px;
 }
 .container{
-  width:86%;
+  // width:86%;
+  // width:1170px;
 }
 .get-started.banner-btn{
-  margin-left:205px;
 }
 .get-started{
   max-width: 182px;
@@ -44,4 +44,7 @@ p{
 }
 .customer-btn{
   margin-top:20px;
+}
+.secondary-content {
+  float: none !important;
 }
