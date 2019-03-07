@@ -42,13 +42,13 @@
                             </div>
                             <div class="box box4">
                                 <input  type="color" name="color" value="#ff0000" class="input" required>
-                                <label class="inputLabel box4InputLabel">Choose Colour</label>
+                                <label class="inputLabel otherinputlabel">Choose Colour</label>
                             </div>
                             <div class="box box5">
                                 <input type="date" value="Birthday" name="date" class="input" required>
-                                <label class="inputLabel margin-top-label">Birthday</label>
+                                <label class="inputLabel otherinputlabel">Birthday</label>
                             </div>
-                            <div class="box box6">
+                            <div class="box box6 box-margin">
                                 <input type="file" name="file" class="margin-top-input" required>
                             </div>
                             <div class="box box7">
@@ -73,9 +73,9 @@
                             </div>
                             <div class="box box2">
                                 <input type="time" name="time"  class="input">
-                                <label class="margin-top-label inputLabel">Time</label>
+                                <label class="otherinputlabel inputLabel">Time</label>
                             </div>
-                            <div class="box box4">
+                            <div class="box box4 box-margin">
                                 <input class="margin-top-input"  type="checkbox" name="color" required>
                                 <label>Fron-End</label>
                                 &nbsp;&nbsp;
@@ -84,11 +84,11 @@
                             </div>
                             <div class="box box5">
                                 <input type="month" name="month" value="2014-05" class="input">
-                                <label class="margin-top-label inputLabel">Month</label>
+                                <label class="otherinputlabel inputLabel">Month</label>
                             </div>
-                            <div class="box box6">
-                                <input type="range" name="age" min="25" max="35" class="margin-top-input">
-                                <label class=" inputLabel" style="margin-top:0px !important">Age</label>
+                            <div class="box box6" style="margin-top:50px">
+                                <input type="range" name="age" min="25" max="35">
+                                <label class=" inputLabel" style="top:-30px;">Age</label>
                             </div>
                             <div class="box box7">
                                 <input type="reset" value="Reset">
@@ -106,7 +106,7 @@
                                 <input type="image" name="image"src="assets/images/27564442b419d83.jpg" class="input" required>
                                 <label class=" inputLabel col3box1inputlabel">Image</label>
                             </div>
-                            <div class="box box2">
+                            <div class="box box2 box-margin">
                                 <input class="margin-top-input"  type="radio" name="radio" required>
                                 <label>Male</label>
                                 &nbsp;&nbsp;
@@ -117,7 +117,7 @@
                                 <input type="hidden" name="hidden" class="input" required>
                             </div>
                             <div class="box box5">
-                                <input type="week" name="week" class="input" style="margin-top:-20px" required>
+                                <input type="week" name="week" class="input" required>
                                 
                             </div>
                             <div class="box box6">
@@ -149,7 +149,7 @@
                                 <option value="Barisal">
                                 <option value="Nilphamari">
                             </datalist>
-                            <label class="inputLabel">District</label>
+                            <label class="inputLabel otherinputlabel">District</label>
                         </div>
                         <div class="box box3">
                             <input type="number" name="number" class="input" required>
@@ -181,13 +181,13 @@
 
         $(document).ready(function(){
             //Input field label up
-            $(".input").blur(function(){
-                if($(this).val().length>0){
-                    $(this).siblings(".inputLabel").css({"margin-top" : "-52px", "font-size":"14px"});
-                }else{
-                    $(this).siblings(".inputLabel").css({"margin-top" : "-28px"});
-                }
-            })
+            // $(".input").blur(function(){
+            //     if($(this).val().length>0){
+            //         $(this).siblings(".inputLabel").css({"margin-top" : "-52px", "font-size":"14px"});
+            //     }else{
+            //         $(this).siblings(".inputLabel").css({"margin-top" : "-28px"});
+            //     }
+            // })
 
             //checkbox checed then label modified
             $('input[type="checkbox"]').click(function(){

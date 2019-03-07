@@ -6,14 +6,12 @@ body{
   }
   .col-box-3{
       .box2{
-          margin-top:-5px;
       }
   }
   .col-box-4{
       .box4{
 
         .inputLabel{
-            margin-top:-41px !important;
         }
       }
       .box1{
@@ -33,11 +31,9 @@ body{
       }
   }
     .margin-top-label{
-        margin-top:-52px !important;
         font-size: 14px;
     }
     .margin-top-input{
-        margin-top:30px !important;
     }
        
     #fullForm{
@@ -61,19 +57,21 @@ body{
             position: relative;
             width:100%;
             .col3box1inputlabel{
-                margin-top:-154px;
                 font-size: 14px;
             }
             .inputLabel{
-                margin-top: -35px;
+                top:25px;
                 position: absolute;
                 color: #bbb;
                 padding: 5px 2px;
                 left:0;
                 z-index: 0;
+                transition:.5s;
+            }
+            .otherinputlabel{
+             top:7px;   
             }
             .box4InputLabel{
-                margin-top:-50px;
                 font-size:14px;
             }
             input{
@@ -98,7 +96,6 @@ body{
                 outline:none;
                 background:#ddd;
                 border-radius:3px;
-                transition-delay: .1s;
                 padding:3px 8px;
                 border:1px solid #ddd;
                 border-bottom:1px solid #ccc;
@@ -110,36 +107,25 @@ body{
                 // box-shadow: inset 0px 0px 1px 3px rgba(0,0,0, .1);
                 background:#bbb;
                 border:1px solid #bbb;
-                transition:.3s;
+                // transition:.3s;
             }
             .input:focus{
                 outline: none;
                 border-bottom:1.5px solid skyblue;
             }
             .input:focus+.inputLabel{
-                margin-top:-52px !important;
                 transition:.5s;
                 font-size:14px;
-                color:skyblue
-            }
-            .input:focus~.inputLabel{
-                margin-top:-52px !important;
-                transition:.5s;
-                font-size:14px;
+                color:skyblue;
+                top:7px !important;
             }
             .input:focus+.col3box1inputlabel{
-                margin-top:-154px !important;
             }
             #message:focus+.inputLabel{
-                margin-top:-58px !important;
             }
         }
-        .box1{
-        }
-        .box7{
-            #button{
-                margin-top:28px !important;
-            }
+        .box-margin{
+            margin-top:28px;
         }
         .box4{
             #message{
@@ -179,15 +165,10 @@ body{
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    
-    margin-top:-132px !important;
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .col3box1inputlabel{
-        margin-top:-154px !important;
-    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
